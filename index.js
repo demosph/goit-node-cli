@@ -30,7 +30,7 @@ async function invokeAction({ action, id, name, email, phone }) {
       break;
 
     case 'remove':
-      const removedContact = contactsService.removeContact(id);
+      const removedContact = await contactsService.removeContact(id);
       console.log(removedContact);
       break;
 
